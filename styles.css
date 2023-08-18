@@ -1,0 +1,154 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom right, #660066, #ff9900);
+    animation: gradientChange 30s infinite alternate;
+}
+
+@keyframes gradientChange {
+    0% {
+        background: linear-gradient(to bottom right, #660066, #ff9900);
+    }
+    20% {
+        background: linear-gradient(to bottom right, #6600cc, #33cc33);
+    }
+    40% {
+        background: linear-gradient(to bottom right, #e74c3c, #3333cc);
+    }
+    60% {
+        background: linear-gradient(to bottom right, #3333cc, #e74c3c);
+    }
+    80% {
+        background: linear-gradient(to bottom right, #33cc33, #6600cc);
+    }
+    100% {
+        background: linear-gradient(to bottom right, #ff9900, #660066);
+    }
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    padding-top: 30px;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-bottom: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    text-align: left;
+    max-width: 400px;
+    margin: 16px;
+}
+
+h1 {
+    font-size: 28px;
+    color: #34495e;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-control-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid transparent;
+    border-image: linear-gradient(to right, #871C65, #e74c3c, #27ae60, #f39c12);
+    border-image-slice: 1;
+    overflow: hidden;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.form-control {
+    flex: 1;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    background-color: transparent;
+    width: 100%;
+    height: 50px;
+}
+
+.form-control:focus {
+    outline: none;
+}
+
+.generate-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #EFB61B;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    width: 100%;
+    height: 50px;
+}
+
+.generate-btn:hover {
+    background-color: #871C65;
+    transform: scale(1.05);
+}
+
+.generate-btn:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.error-message {
+    color: #e74c3c;
+    margin-top: 5px;
+}
+
+#qrcodeContainer {
+    margin-top: 30px;
+    opacity: 0;
+    transform: scale(0.8);
+    transition: opacity 0.5s, transform 0.5s;
+    width: 100%;
+    /* Adjust QR code container width */
+}
+
+#qrcodeContainer.show {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.branding {
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+    height: 100%;
+}
+
+.logo {
+    max-width: 26px;
+    margin-bottom: 12px;
+}
+
+.brand-text {
+    margin-left: 5px;
+    font-size: 14px;
+}
+
+.hidden {
+    font-size: 16px;
+    color: #555;
+    margin-top: 10px;
+    display: none;
+}

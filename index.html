@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free QR Code By Poprigo!</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+</head>
+
+<body>
+    <div class="container">
+        <h1>QR Code Generator</h1>
+        <p class="subtitle">Create QR codes effortlessly with our advanced QR code generator tool.</p>
+        <div class="form-group">
+            <div class="form-control-container">
+                <input type="text" class="form-control" id="text" placeholder="Enter text">
+            </div>
+            <div class="error-message" id="errorMessage"></div>
+        </div>
+        <button class="generate-btn" id="generateBtn">Generate QR Code</button>
+        <div id="qrcodeContainer" class="show">
+            <div id="qrcode"></div>
+            <p id="dQR" class="hidden">Click on QR code to download 🚀</p>
+        </div>
+        <footer class="branding">
+            <img src="logo.png" alt="Logo" class="logo">
+            <p class="brand-text">Powered by Poprigo!</p>
+        </footer>
+    </div>
+
+    <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
